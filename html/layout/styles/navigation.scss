@@ -1,0 +1,108 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 60px 0;
+  color: #666;
+  font-family: Karla, sans-serif;
+  @include for-large-up {
+    flex-direction: row;
+    max-height: 52px;
+  }
+  &__title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 83px;
+    color: $color-black;
+    font-weight: 400;
+    font-family: Unica One, sans-serif;
+    font-size: 2.25em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    @include for-large-up {
+      margin: 0 0 0 0.625em;
+      width: 570px;
+    }
+  }
+  &__search {
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+    color: $color-grey;
+    line-height: 1.375;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include for-large-up {
+      margin-left: auto;
+      max-width: 375px;
+      max-height: 52px;
+    }
+  }
+  &__filter {
+    display: flex;
+    margin-bottom: 13px;
+
+    flex-direction: column;
+    justify-content: center;
+    height: 51px;
+    min-width: 115px;
+    @include for-large-up {
+      text-align: left;
+    }
+  }
+  &__sort {
+    display: flex;
+
+    flex-direction: column;
+    min-width: 115px;
+    @include for-large-up {
+      text-align: left;
+    }
+  }
+  &__title-hidden {
+    display: flex;
+    flex-wrap: wrap;
+    @include for-large-up {
+      visibility: hidden;
+    }
+  }
+}
+
+.navigation-label {
+  padding: 0;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  text-align: center;
+  line-height: 1.375;
+  @include for-large-up {
+    margin-bottom: 13px;
+  }
+}
+.navigation-select {
+  border: 1px solid $color-dark-white;
+
+  height: 22px;
+  font-weight: 700;
+  background-color: transparent;
+  margin: 0;
+
+  padding-left: 6px 6px 6px 28px;
+  @include for-large-up {
+    border-color: transparent;
+  }
+}
+.navigation-select:hover {
+  border: 1px solid black;
+  border-radius: 2px;
+}

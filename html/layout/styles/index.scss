@@ -1,0 +1,15 @@
+@import 'variables.scss';
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $color-light-grey;
+  padding: 0 20px;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+@import 'products.scss';
+@import 'breakpoints.scss';
+@import 'navigation.scss';

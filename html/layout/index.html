@@ -2,18 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <nav class="navigation">
-      <div class="navigation__title">JACKETS</div>
+      <div class="navigation__title">
+        JACKETS <span class="navigation__title-hidden">-JACKETS</span>
+      </div>
       <div class="navigation__search">
         <div class="navigation__filter">
           <label class="navigation-label">FILTER BY</label>
           <select class="navigation-select">
-            <option>Jackets</option>
+            <option>All</option>
             <option>Jackets 2012</option>
             <option>Jackets 2012</option>
           </select>
@@ -21,7 +39,7 @@
         <div class="navigation__sort">
           <label class="navigation-label">SORT BY</label>
           <select class="navigation-select">
-            <option></option>
+            <option>Featured</option>
             <option>by price</option>
             <option>by size</option>
           </select>
@@ -32,84 +50,79 @@
     <!--  -->
     <section class="products">
       <div class="product">
-        <span class="product__sale"> </span>
+        <span class="product__sale">Sale </span>
         <div class="product__img">
           <img
             src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
-            alt=""
+            alt="Haze Varsity"
           />
         </div>
-      </div>
-      <div class="product__info">
-        <div class="product__name">tete</div>
-        <div class="product__price">140$</div>
-        <div class="product__avail">sold out</div>
-      </div>
-      <div class="product">
-        <div class="product">
-          <span class="product__sale"> </span>
-          <div class="product__img">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
-              alt=""
-            />
-          </div>
-        </div>
+
         <div class="product__info">
-          <div class="product__name">tete</div>
+          <div class="product__name">Haze Varsity</div>
           <div class="product__price">140$</div>
           <div class="product__avail">sold out</div>
         </div>
       </div>
       <div class="product">
-        <div class="product">
-          <span class="product__sale"> </span>
-          <div class="product__img">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
-              alt=""
-            />
-          </div>
+        <span class="product__sale">Sale</span>
+        <div class="product__img">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
+            alt="Haze Varsity"
+          />
         </div>
         <div class="product__info">
-          <div class="product__name">tete</div>
+          <div class="product__name">Haze Varsity</div>
           <div class="product__price">140$</div>
           <div class="product__avail">sold out</div>
         </div>
       </div>
       <div class="product">
-        <div class="product">
-          <span class="product__sale"> </span>
-          <div class="product__img">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
-              alt=""
-            />
-          </div>
+        <span class="product__sale">Sale</span>
+        <div class="product__img">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
+            alt="Haze Varsity"
+          />
         </div>
+
         <div class="product__info">
-          <div class="product__name">tete</div>
+          <div class="product__name">Haze Varsity</div>
           <div class="product__price">140$</div>
           <div class="product__avail">sold out</div>
         </div>
       </div>
       <div class="product">
-        <div class="product">
-          <span class="product__sale"> </span>
-          <div class="product__img">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
-              alt=""
-            />
-          </div>
+        <span class="product__sale">Sale </span>
+        <div class="product__img">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
+            alt="Haze Varsity"
+          />
         </div>
+
         <div class="product__info">
-          <div class="product__name">tete</div>
+          <div class="product__name">Haze Varsity</div>
           <div class="product__price">140$</div>
           <div class="product__avail">sold out</div>
         </div>
       </div>
-      <div class="product"></div>
+      <div class="product">
+        <span class="product__sale">Sale </span>
+        <div class="product__img">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0938/8938/products/10175100258_1_1264x1800_300_RGB_1024x1024.jpeg?v=1445623366"
+            alt="Haze Varsity"
+          />
+        </div>
+
+        <div class="product__info">
+          <div class="product__name">Haze Varsity</div>
+          <div class="product__price">140$</div>
+          <div class="product__avail">sold out</div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
