@@ -20,12 +20,9 @@
 //return:undefined
 function getPrimes(num) {
   for (let index = 2; index <= num; index += 1) {
-    console.log('index is' + index);
     let isPrime = true;
-    for (let secondIndex = 2; secondIndex <= index; secondIndex += 1) {
-      console.log('secondindex is' + secondIndex);
+    for (let secondIndex = 2; secondIndex < index; secondIndex += 1) {
       if (index % secondIndex === 0) {
-        console.log('index is' + index);
         isPrime = false;
         break;
       }
