@@ -21,3 +21,4 @@ module.exports = {
     'prefer-template': 0,
   },
 };
+{ "properties": "never", "ignoreDestructuring": true }
