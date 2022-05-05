@@ -56,14 +56,14 @@ print();
 
 console.log(a);
 // hoisting func example 4
-
 run();
 
 function run() {
   console.log('RUN');
 }
 
-stop();
 const stop = function () {
   console.log('STOP');
 };
+
+stop();
