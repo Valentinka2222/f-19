@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import UserList from './UserList.jsx';
+import UsersList from './UsersList.jsx';
 
 const rootElement = document.querySelector('#root');
 
@@ -18,4 +18,4 @@ const users = [
   { name: 'Toretto', age: 60 },
 ];
 
-ReactDOM.render(<UserList users={users} />, rootElement);
+ReactDOM.render(<UsersList users={users} />, rootElement);
