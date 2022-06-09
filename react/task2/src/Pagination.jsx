@@ -7,9 +7,9 @@ const Pagination = ({ currentPage, goPrev, goNext, totalItems, itemsPerPage }) =
   if (totalItems % itemsPerPage) {
     disabled = false;
   }
-  if (totalItems % itemsPerPage == 1) {
-    isNextPageAvailable = null;
+  if (totalItems < 3) {
     disabled = true;
+    isNextPageAvailable = null;
   }
   if (currentPage === 1) {
     isPrevPageAvailable = null;
