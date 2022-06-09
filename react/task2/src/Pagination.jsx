@@ -8,15 +8,15 @@ const Pagination = ({ currentPage, goPrev, goNext, totalItems, itemsPerPage }) =
     disabled = false;
   }
   if (totalItems % itemsPerPage == 1) {
-    disabled = true;
     isNextPageAvailable = null;
+    disabled = true;
   }
-  if (currentPage === 1) {
+  if (currentPage >= 1) {
     isPrevPageAvailable = null;
   }
   return (
     <div className="pagination">
-      <button className="btn" onClick={goPrev}>
+      <button className="btn" onClick={goPrev} disabled={disabled}>
         {isPrevPageAvailable}
       </button>
       <span className="pagination__page">{currentPage}</span>
