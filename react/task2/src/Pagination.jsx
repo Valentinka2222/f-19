@@ -5,10 +5,11 @@ const Pagination = ({ currentPage, goPrev, goNext, totalItems, itemsPerPage }) =
   let isNextPageAvailable = '→';
   let isPrevPageAvailable = '←';
 
+  console.log(currentPage);
   if (currentPage === 1) {
     isPrevPageAvailable = null;
   }
-  if (totalItems % itemsPerPage === 1) {
+  if (totalItems % itemsPerPage === 1 || itemsPerPage === currentPage) {
     isNextPageAvailable = null;
   }
 

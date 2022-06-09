@@ -15,7 +15,6 @@ const users = [
   { name: 'Jack', age: 19 },
   { name: 'Bom', age: 21 },
   { name: 'DOM', age: 22 },
-  { name: 'Toretto', age: 60 },
 ];
 
 ReactDOM.render(<UsersList users={users} />, rootElement);
