@@ -5,7 +5,7 @@ const Pagination = ({ currentPage, goPrev, goNext, totalItems, itemsPerPage }) =
   let isNextPageAvailable = '→';
   let disabled;
 
-  if (totalItems < 3) {
+  if (totalItems % itemsPerPage == 1) {
     isNextPageAvailable = null;
   }
   if (currentPage === 1) {
